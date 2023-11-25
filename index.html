@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="inputContainer" class="input-container">
+      <label for="characterId">Digite o ID do personagem:</label>
+      <input type="text" id="characterId" />
+      <button id="buscarButton">Buscar</button>
+      <button id="salvarNovoPersonagemButton">Inserir Novo Personagem</button>
+    </div>
+    <div id="tabelaContainer" class="tabela-container">
+      <table id="tabelaPersonagem" class="tabela-personagem">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Status</th>
+            <th>Espécie</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <button id="editarButton" style="display: none">Editar</button>
+
+    <!-- Modal para editar os personagens -->
+
+    <div id="modal" class="modal">
+      <div class="elementos-modal">
+        <span class="fechar" id="fecharModal">&times;</span>
+        <h2>Dados do Personagem</h2>
+        <label for="editId">ID:</label>
+        <input type="text" id="editId" />
+        <label for="editNome">Nome:</label>
+        <input type="text" id="editNome" />
+        <label for="editStatus">Status:</label>
+        <input type="text" id="editStatus" />
+        <label for="editEspecie">Espécie:</label>
+        <input type="text" id="editEspecie" />
+        <button id="salvarEdicaoButton" class="salvar-button">Salvar</button>
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
